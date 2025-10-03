@@ -17,20 +17,20 @@ docker build -t flask-api-server .
 ### 2. コンテナの起動
 
 ```bash
-docker run -d -p 5000:5000 --name flask-api flask-api-server
+docker run -d -p 8000:8000 --name flask-api flask-api-server
 ```
 
 ### 3. APIの動作確認
 
 ```bash
 # ヘルスチェック
-curl http://localhost:5000/health
+curl http://localhost:8000/health
 
 # メインエンドポイント
-curl http://localhost:5000/
+curl http://localhost:8000/
 
 # API情報
-curl http://localhost:5000/api/info
+curl http://localhost:8000/api/info
 ```
 
 ## 利用可能なエンドポイント
