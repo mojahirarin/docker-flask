@@ -27,5 +27,14 @@ def info():
     })
 
 
+@app.route('/soichiro')
+def soichiro():
+    return jsonify({
+        'name': 'soichiro hirabayashi',
+        'version': 28,
+        'birthday': '1996-11-26'
+    })
+
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8000, debug=False)
