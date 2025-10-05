@@ -26,6 +26,12 @@ def info():
         'description': 'Simple Flask API Server with Poetry'
     })
 
+@app.route('/junnosuke')
+def info():
+    return jsonify({
+        'name': 'Flask API Server feat.junnosuke',
+        'comment': 'hello World git!'
+    })
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8000, debug=False)
