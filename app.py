@@ -26,6 +26,12 @@ def info():
         'description': 'Simple Flask API Server with Poetry'
     })
 
+@app.route('/junnosuke')
+def info():
+    return jsonify({
+        'name': 'Flask API Server feat.junnosuke',
+        'comment': 'hello World git!'
+    })
 
 @app.route('/soichiro')
 def soichiro():
