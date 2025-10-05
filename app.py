@@ -27,7 +27,7 @@ def info():
     })
 
 @app.route('/junnosuke')
-def info():
+def junnosuke():
     return jsonify({
         'name': 'Flask API Server feat.junnosuke',
         'comment': 'hello World git!'
